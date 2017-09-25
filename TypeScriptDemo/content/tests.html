@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>.Net Development Conference TypeScript Example - Unit Tests</title>
     <link rel="stylesheet" href="cdn/mocha.css">
-    <script type="text/javascript" src="cdn/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="cdn/chai.js"></script>
     <script type="text/javascript" src="cdn/require-2.3.5.js"></script>
     <script type="text/javascript" src="cdn/mocha.js"></script>
@@ -14,7 +13,7 @@
 <body>
     <div id="mocha"></div>
     <script>
-        require(["tests/GreetingTest"], function () {
+        require(["tests/GreetingTest", "tests/MainPageTests"], function () {
             mocha.run()
         });
     </script>
