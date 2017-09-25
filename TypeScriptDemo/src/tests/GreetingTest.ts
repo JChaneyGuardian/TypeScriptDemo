@@ -30,6 +30,13 @@ function setup_tests() {
             chai.expect(result).to.equal("Hello Sam I Am!");
         })
 
+        it('should be able to use a SecurityIdentity object', () => {
+            var person = new SecurityIdentity("Sam", "I", "Am", undefined);
+
+            var result = greeting(person);
+            chai.expect(result).to.equal("Hello Sam I Am!");
+        })
+
         it('should be able to handled an undefined', () => {
             //var person = new PersonWithMiddleNameObj("Sam", "I", "Am");
 
