@@ -22,7 +22,11 @@ export default class PersonWithMiddleName extends Person {
     }
 
     FullName = () => {
-        return this.firstName + " " + this.middleName + " " + this.lastName;
+        if (this.middleName)
+            return this.firstName + " " + this.middleName + " " + this.lastName;
+        else
+            return this.firstName + " " + this.lastName;
+
     }
 
 }

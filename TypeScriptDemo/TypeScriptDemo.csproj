@@ -104,11 +104,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\models\IApplication.ts" />
+    <TypeScriptCompile Include="src\models\IPage.ts" />
     <TypeScriptCompile Include="src\models\IPerson.ts" />
     <TypeScriptCompile Include="src\models\ISecurityIdentity.ts" />
     <TypeScriptCompile Include="src\models\Person.ts" />
     <TypeScriptCompile Include="src\models\SecurityIdentity.ts" />
+    <TypeScriptCompile Include="src\pages\MainPage.ts" />
     <TypeScriptCompile Include="src\tests\GreetingTest.ts" />
+    <TypeScriptCompile Include="src\tests\MainPageTests.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

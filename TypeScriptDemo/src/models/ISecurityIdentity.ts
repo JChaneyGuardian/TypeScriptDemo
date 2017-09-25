@@ -1,4 +1,6 @@
-﻿export interface ISecurityIdentity {
+﻿import IPerson from "IPerson";
+
+export interface ISecurityIdentity extends IPerson {
     getLoginName(): String;
     authenticate(): boolean;
 }

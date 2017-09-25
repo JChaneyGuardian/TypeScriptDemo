@@ -6,5 +6,5 @@
     FullName(): string;
 }
 
-
+export default IPerson;
 
