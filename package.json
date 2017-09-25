@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jquery": "^3.2.12"
+    "@types/chai": "^4.0.4",
+    "@types/jquery": "^3.2.12",
+    "@types/mocha": "^2.2.43"
   }
 }
