@@ -99,9 +99,10 @@
     <Content Include="content\cdn\require-2.3.5.js" />
     <Content Include="content\cdn\require-2.3.5.min.js" />
     <Content Include="content\index.html" />
-    <TypeScriptCompile Include="content\scripts\greeting.ts" />
+    <TypeScriptCompile Include="src\greeting.ts" />
     <Content Include="favicon.ico" />
     <Content Include="Web.config" />
+    <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,7 +111,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <Folder Include="content\scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
