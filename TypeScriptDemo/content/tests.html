@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="cdn/mocha.css">
     <script type="text/javascript" src="cdn/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="cdn/chai.js"></script>
+    <script type="text/javascript" src="cdn/require-2.3.5.js"></script>
     <script type="text/javascript" src="cdn/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
     <script type="text/javascript" src="scripts/application.js"></script>
@@ -13,8 +14,9 @@
 <body>
     <div id="mocha"></div>
     <script>
-        setup_tests();
-        mocha.run()
+        require(["tests/GreetingTest"], function () {
+            mocha.run()
+        });
     </script>
 
 </body>
