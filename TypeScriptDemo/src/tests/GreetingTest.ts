@@ -6,25 +6,25 @@ function setup_tests() {
             chai.expect(result).to.equal("Hello Test Person!");
         })
         it('should be able to use an adhoc person', () => {
-            var person: Person = {
+            var person: IPerson = {
                 lastName: "Dog",
                 middleName: "The",
                 firstName: "Snoop",
-                fullName() { return "Martha Stewart"; }
+                FullName() { return "Martha Stewart"; }
             }
             var result = greeting(person);
             chai.expect(result).to.equal("Hello Martha Stewart!");
         })
 
         it('should be able to use a Person object', () => {
-            var person = new PersonObj("Uncle", "Bob");
+            var person = new Person("Uncle", "Bob");
 
             var result = greeting(person);
             chai.expect(result).to.equal("Hello Uncle Bob!");
         });
 
         it('should be able to use a PersonWithMiddleName object', () => {
-            var person = new PersonWithMiddleNameObj("Sam", "I", "Am");
+            var person = new PersonWithMiddleName("Sam", "I", "Am");
 
             var result = greeting(person);
             chai.expect(result).to.equal("Hello Sam I Am!");

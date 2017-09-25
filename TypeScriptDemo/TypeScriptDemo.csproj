@@ -104,8 +104,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="src\Main.ts" />
+    <TypeScriptCompile Include="src\models\IPerson.ts" />
     <TypeScriptCompile Include="src\models\Person.ts" />
-    <TypeScriptCompile Include="src\models\PersonObj.ts" />
     <TypeScriptCompile Include="src\tests\GreetingTest.ts" />
   </ItemGroup>
   <ItemGroup>
