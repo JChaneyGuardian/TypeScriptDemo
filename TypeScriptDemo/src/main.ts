@@ -1,5 +1,5 @@
 ﻿// main.ts
-document.addEventListener("DOMContentLoaded", function (event) {
+$(document).ready(function () {
     var user = ".Net Development Team";
-    document.getElementById("greeting-header").innerText = greeting(user);
+    $("#greeting-header").text(greeting(user));
 });

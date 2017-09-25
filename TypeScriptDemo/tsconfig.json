@@ -6,9 +6,16 @@
     "sourceMap": true,
     //"outDir": "./content/scripts",
     "outFile": "./content/scripts/application.js",
+    "lib": [ // This is needed as a temporary fix for a bug in the JQuery Typing
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.iterable"
+    ],
     "target": "es5"
   },
   "compileOnSave": true,
+  
   "include": [
     "src/**/*"
   ],
