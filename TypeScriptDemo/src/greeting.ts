@@ -1,5 +1,5 @@
 ﻿// greeting.ts
-function greeting(person: IPerson) 
+function greeting(person: Person) 
 function greeting(firstName: string, lastName?: string): string
 function greeting(parm: any, ...restOfName: string[]): string {
     if (typeof (parm) === "object")

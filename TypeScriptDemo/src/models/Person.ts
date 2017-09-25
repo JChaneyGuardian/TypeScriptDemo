@@ -1,5 +1,5 @@
 ﻿// IPerson
-interface IPerson {
+interface Person {
     firstName: string;
     lastName: string;
 
