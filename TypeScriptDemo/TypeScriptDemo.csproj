@@ -103,6 +103,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Web.config" />
     <TypeScriptCompile Include="src\Main.ts" />
+    <TypeScriptCompile Include="src\models\Person.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
