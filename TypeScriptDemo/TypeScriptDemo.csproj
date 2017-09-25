@@ -104,6 +104,7 @@
     <Content Include="Web.config" />
     <TypeScriptCompile Include="src\Main.ts" />
     <TypeScriptCompile Include="src\models\Person.ts" />
+    <TypeScriptCompile Include="src\models\PersonObj.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
