@@ -75,10 +75,22 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\cdn\chai.js" />
+    <Content Include="content\cdn\jquery-1.11.3.js" />
+    <Content Include="content\cdn\jquery-1.11.3.min.js" />
+    <Content Include="content\cdn\mocha.css" />
+    <Content Include="content\cdn\mocha.js" />
+    <Content Include="content\cdn\require-2.3.5.js" />
+    <Content Include="content\cdn\require-2.3.5.min.js" />
+    <Content Include="content\index.html" />
+    <Content Include="favicon.ico" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

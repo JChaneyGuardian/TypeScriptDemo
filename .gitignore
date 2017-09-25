@@ -17,6 +17,7 @@
 *.js
 *.map
 !_references.js
+!**/cdn/*.js
 
 # Build results
 [Dd]ebug/
