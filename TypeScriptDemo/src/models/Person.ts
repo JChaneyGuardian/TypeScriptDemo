@@ -1,29 +1,28 @@
-﻿// Person
-namespace Identity {
-    export class Person implements IPerson {
-        lastName: string;
-        firstName: string;
+﻿import * as Identity from "IPerson";
 
-        constructor(firstName: string, lastName: string) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-        }
+class Person implements Identity.IPerson {
+    lastName: string;
+    firstName: string;
 
-        FullName = () => {
-            return this.firstName + " " + this.lastName;
-        }
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    export class PersonWithMiddleName extends Person {
-        middleName: string;
-        constructor(firstName: string, middleName: string, lastName: string) {
-            super(firstName, lastName);
-            this.middleName = middleName;
-        }
-
-        FullName = () => {
-            return this.firstName + " " + this.middleName + " " + this.lastName;
-        }
-
+    FullName = () => {
+        return this.firstName + " " + this.lastName;
     }
+}
+
+export default class PersonWithMiddleName extends Person {
+    middleName: string;
+    constructor(firstName: string, middleName: string, lastName: string) {
+        super(firstName, lastName);
+        this.middleName = middleName;
+    }
+
+    FullName = () => {
+        return this.firstName + " " + this.middleName + " " + this.lastName;
+    }
+
 }

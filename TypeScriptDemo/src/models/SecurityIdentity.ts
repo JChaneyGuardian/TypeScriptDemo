@@ -1,4 +1,9 @@
-﻿class SecurityIdentity extends Identity.PersonWithMiddleName implements ISecurityIdentity {
+﻿import PersonWithMiddleName from "./Person";
+import * as Identity from "./IPerson";
+import ISecurityIdentity from "./ISecurityIdentity";
+
+
+export default class SecurityIdentity extends PersonWithMiddleName implements Identity.IPerson, ISecurityIdentity {
     constructor(firstName: string, middleName: string, lastName: string, loginName?: string) {
         super(firstName, middleName, lastName);
         this.loginName = loginName;
@@ -14,4 +19,3 @@
     }
 
 }
-
