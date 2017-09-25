@@ -1,5 +1,5 @@
 ﻿// ISecurityIdentity
-interface ISecurityIdentity extends IPerson {
+interface ISecurityIdentity extends Identity.IPerson {
     getLoginName(): String;
     authenticate(): boolean;
 }

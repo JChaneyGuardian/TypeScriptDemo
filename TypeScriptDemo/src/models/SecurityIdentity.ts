@@ -1,4 +1,4 @@
-﻿class SecurityIdentity extends PersonWithMiddleName implements ISecurityIdentity {
+﻿class SecurityIdentity extends Identity.PersonWithMiddleName implements ISecurityIdentity {
     constructor(firstName: string, middleName: string, lastName: string, loginName?: string) {
         super(firstName, middleName, lastName);
         this.loginName = loginName;

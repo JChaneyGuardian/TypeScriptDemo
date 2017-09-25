@@ -1,7 +1,9 @@
 ﻿// IPerson
-interface IPerson {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-    FullName(): string;
+namespace Identity {
+    export interface IPerson {
+        firstName: string;
+        middleName?: string;
+        lastName: string;
+        FullName(): string;
+    }
 }
