@@ -1,9 +1,9 @@
 ﻿// main.ts
 function document_ready() {
-    var user = {
+    var user : IPerson = {
         firstName: "",
         lastName: "",
-        fullName() { return "AdHoc User"; }
+        FullName() { return "AdHoc User"; }
     };
     $("#greeting-header").text(greeting(user));
 };

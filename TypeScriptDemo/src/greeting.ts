@@ -1,9 +1,9 @@
 ﻿// greeting.ts
-function greeting(person: Person) 
+function greeting(person: IPerson) 
 function greeting(firstName: string, lastName?: string): string
 function greeting(parm: any, ...restOfName: string[]): string {
     if (typeof (parm) === "object")
-        return greeting(parm.fullName());
+        return greeting((parm as IPerson).FullName());
     else if ((typeof (parm) === "string")) {
         var name = parm;
         if (restOfName.length > 0)
