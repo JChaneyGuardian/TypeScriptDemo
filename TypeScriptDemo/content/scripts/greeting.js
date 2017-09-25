@@ -1,3 +1,4 @@
-﻿function greeting(person) {
-    return `Hello ${person}!`;
+function greeting(person) {
+    return "Hello " + person + "!";
 }
+//# sourceMappingURL=greeting.js.map
