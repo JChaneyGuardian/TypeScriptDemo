@@ -4,7 +4,8 @@
     "noEmitOnError": true,
     "removeComments": false,
     "sourceMap": true,
-    "outDir": "./content/scripts",
+    //"outDir": "./content/scripts",
+    "outFile": "./content/scripts/application.js",
     "target": "es5"
   },
   "compileOnSave": true,
