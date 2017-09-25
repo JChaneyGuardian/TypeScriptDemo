@@ -18,6 +18,7 @@
 *.map
 !_references.js
 !**/cdn/*.js
+!greeting.js
 
 # Build results
 [Dd]ebug/
